@@ -4,4 +4,3 @@ https://enzomind.com/files/uwm/wyklady/ProjAppWeb/lab1.pdf
 
 artur.samojluk@uwm.edu.pl
 
-Notepad++/Notepad2
