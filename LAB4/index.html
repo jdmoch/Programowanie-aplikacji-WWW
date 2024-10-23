@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<?php
+	include('labor_169236_1.php')
+?>
+	<script src="js/kolorujtlo.js" type="text/javascript"></script>
+	<script src="js/timedate.js" type="text/javascript" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Author" content="Jakub Dmochowski">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Historia lotów kosmicznych</title>
+</head>
+<body onload="startclock()">
+	<div id="zegarek"></div>
+	<div id="data"></div>
+	<header>
+		<h1>Historia Lotów Kosmicznych</h1>
+		<nav>
+			<ul>
+			<li><a href="index.html">Strona Główna</a></li>
+			<li><a href="html/pierwszeloty.html">Pierwsze Loty</a></li>
+			<li><a href="html/apollo.html">Program Apollo</a></li>
+			<li><a href="html/promykosmiczne.html">Era Promów kosmicznych</a></li>
+			<li><a href="html/stacjekosmiczne.html">Międzynarodowa Stacja Kosmiczna</a></li>
+			<li><a href="html/kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>	
+	</header>
+<main>
+	<section>
+		<h2>Witamy na stronie o historii lotów kosmicznych</h2>
+		<a>Ta strona przedstawia początki pierwszych podróży w kosmos, aż po dzisiejsze misje kosmiczne</a>
+		<div class="zdjecia">
+			<img src="img\000GDQUBGMQSTRCH-C461-F4.jpg" alt="Zdjęcie 1">
+			<img src="img\265b5693.jpg" alt="Zdjęcie 2">
+			<img src="img\1000_470_matched__p19les_fa67b45bcb6910da5fce1aa23212da83.jpg" alt="Zdjęcie 3">
+			<img src="img\lot-w-kosmos.jpg" alt="Zdjęcie 4">
+			<img src="img\aaa.jpg" alt="Zdjęcie 5">
+			<img src="img\rakieta-spacex.jpg" alt="Zdjęcie 6">
+			<img src="img\space-shuttle-g316e60b66_1280-768x512.png" alt="Zdjęcie 7">
+			<img src="img\ccc.jpg" alt="Zdjęcie 8">
+			<img src="img\v-2.jpg" alt="Zdjęcie 9">
+			<img src="img\original.jpg" alt="Zdjęcie 10">
+			<img src="img\qrhmol-gfh.jpg" alt="Zdjęcie 11">
+			<img src="img\ddd.jpg" alt="Zdjęcie 12">
+			<img src="img\d2c346dd99d12acf8f1ff0d7e905fbdd.jpg" alt="Zdjęcie 13">
+			<img src="img\1.jpg" alt="Zdjęcie 14">
+			<img src="img\282dcd86-6bbb-489b-a459-e5faec0374a2.jpg" alt="Zdjęcie 15">
+		</div>
+	</section>
+</main>
+
+<div class="kolorki">
+<h3>Zmiana koloru strony</h3>
+<form method="POST" name="background">
+        <input type="button" value="Żółty" onclick="changeBackground('#FFFF00')">
+        <input type="button" value="Czarny" onclick="changeBackground('#000000')">
+        <input type="button" value="Biały" onclick="changeBackground('#FFFFFF')">
+        <input type="button" value="Zielony" onclick="changeBackground('#00FF00')">
+        <input type="button" value="Niebieski" onclick="changeBackground('#0000FF')">
+        <input type="button" value="Pomarańczowy" onclick="changeBackground('#FF8000')">
+        <input type="button" value="Szary" onclick="changeBackground('#C0C0C0')">
+        <input type="button" value="Czerwony" onclick="changeBackground('#FF0000')">
+        <input type="button" value="Podstawowy" onclick="changeBackground('#FFFFFF')">
+   </form>
+</div>
+
+
+<div id="animacje-kontener">
+
+<div id="animacjaTestowa1" class="test-block" >Kliknij by powiększyć</div>
+
+    <script>
+        $('#animacjaTestowa1').on('click', function() {
+            $(this).animate({
+                width: "500px",
+                opacity: 0.4,
+                fontSize: "3em",
+                borderWidth: "10px"
+            }, 1500);
+        });
+    </script>
+
+<div id="animacjaTestowa2" class="test-block">Kliknij by rozszerzyć</div> 
+
+ <script>
+
+ $("#animacjaTestowa2").on({"mouseover" : function() {
+    $(this).animate({
+    width: 550
+      }, 1000);
+     },
+    "mouseout" : function() {
+    $(this).animate({
+    width: 350
+   }, 5000);
+ }
+});
+
+</script>
+
+<div id="animacjaTestowa3" class="test-block">Kliknij, by powiększać</div>
+
+    <script>
+        $('#animacjaTestowa3').on('click', function() {
+            if (!$(this).is(':animated')) {
+                $(this).animate({
+                    width: "+=" + 50,
+                    height: "+=" + 10,
+                    duration: 3000 
+                });
+            }
+        });
+  	</script>
+
+
+</div>
+
+<footer>
+	<a>2024 Historia Lotów Kosmicznych. Jakub Dmochowski 169236</a>
+</footer>
+
+
+</body>
+</html>
